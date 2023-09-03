@@ -4,7 +4,7 @@ setlocal enabledelayedexpansion
 
 :: ------------------- execute script -------------------
 @rem build locale converter image
-docker build -t py-jieba .
+docker build -t py-jieba .\conf\docker\jieba
 
 @rem create cache
 IF NOT EXIST cache (
